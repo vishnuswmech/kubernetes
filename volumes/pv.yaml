@@ -1,0 +1,13 @@
+kind: PersistentVolume
+metadata:
+  name: myvol
+spec:
+        # claimRef:
+        #name: vishnupvc
+  accessModes:
+    - ReadOnlyMany
+  capacity:
+    storage: 2Gi
+    #storageClassName: standard
+  hostPath:
+   path: /pv_vishnu_stor
